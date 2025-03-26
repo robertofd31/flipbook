@@ -108,7 +108,7 @@ if uploaded_file is not None:
 
             for i in range(preview_count):
                 with cols[i]:
-                    st.image(frame_paths[i], caption=f"Página {i+1}", use_column_width=True)
+                    st.image(frame_paths[i], caption=f"Página {i+1}", use_container_width=True)
 
             # Crear botón de descarga
             zip_bytes = create_download_zip(frame_paths)
